@@ -53,16 +53,22 @@ export default function Auth() {
     console.log("Session from Auth: ", actualSession.session)
     return(
       <View style={styles.container}>
-      <View style={[styles.verticallySpaced, styles.mt20]}>
-        <Text>You are signed in as {localSession}</Text>
-        <Text
-        onPress={() => {
-          signOut();
-          router.replace('/')
-        }}>
-        Sign Out
-      </Text>
-      </View>
+        <View style={[styles.verticallySpaced, styles.mt20]}>
+          <Text>You are signed in as {localSession}</Text>
+            <Text
+              onPress={() => {
+                signOut();
+                router.replace('/')
+              }}>
+              Sign Out
+            </Text>
+            <Text
+              onPress={() => {
+                router.replace('/')
+              }}>
+              Go Home
+            </Text>
+        </View>
       </View>
     )
   } else {

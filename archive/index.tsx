@@ -2,13 +2,12 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Link } from 'expo-router';
 import Login from './login';
 import { useEffect } from 'react';
+import Auth from './login';
 
 export default function HomePage() {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Welcome to the App</Text>
-      <Link href="/groups/">Groups</Link>
-      <Link href="/login">Login</Link>
+      <Auth />
     </View>
   );
 }
