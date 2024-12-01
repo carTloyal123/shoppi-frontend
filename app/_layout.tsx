@@ -1,4 +1,4 @@
-import '@/globals.css';
+import 'globals.css';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Theme, ThemeProvider } from '@react-navigation/native';
